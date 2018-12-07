@@ -1,0 +1,67 @@
+{
+  "pokemonList": [
+    {
+      "id": 1,
+      "name" : "妙蛙种子",
+      "img": "imgs/300px-001Bulbasaur.png",
+      "content": "",
+      "area": [1, 2]
+    },
+    {
+      "id": 2,
+      "name" : "妙蛙草",
+      "img": "imgs/300px-002Ivysaur.png",
+      "content": "",
+      "area": [1, 2]
+    },
+    {
+      "id": 3,
+      "name" : "妙蛙花",
+      "img": "imgs/300px-003Venusaur.png",
+      "content": "",
+      "area": [1, 2]
+    },
+    {
+      "id": 4,
+      "name" : "小火龙",
+      "img": "imgs/300px-004Charmander.png",
+      "content": "",
+      "area": [1, 3]
+    },
+    {
+      "id": 5,
+      "name" : "火恐龙",
+      "img": "imgs/300px-005Charmeleon.png",
+      "content": "",
+      "area": [1, 3]
+    },
+    {
+      "id": 6,
+      "name" : "喷火龙",
+      "img": "imgs/300px-006Charizard.png",
+      "content": "",
+      "area": [1, 3]
+    },
+    {
+      "id": 7,
+      "name" : "杰尼龟",
+      "img": "imgs/300px-007Squirtle.png",
+      "content": "",
+      "area": [1]
+    },
+    {
+      "id": 8,
+      "name" : "卡咪龟",
+      "img": "imgs/300px-008Wartortle.png",
+      "content": "",
+      "area": [1]
+    },
+    {
+      "id": 9,
+      "name" : "水箭龟",
+      "img": "imgs/300px-009Blastoise.png",
+      "content": "",
+      "area": [1]
+    }
+  ]
+}

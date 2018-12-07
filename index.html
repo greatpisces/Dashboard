@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="pokemon">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body ng-controller="pokemonList" ng-class="sidebarOpen()">
+    <div class="main-container">
+    <!-- Navbar -->
+        <nav class="navbar navbar-expand bg-white navbar-light border-bottom fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Navbar links -->
+                    <div class="col-sm-4">
+                        <ul class="navbar-nav">
+                            <li class="nav-item" id="menu" ng-click="toggleSidebar()">
+                                <a class="nav-link" href="#"><i class="fa fa-bars"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Navbar search -->
+                    <form class="form-inline col-sm-4">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Search...">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <span class="fa fa-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Dropdown menu -->
+                    <div class="col-sm-4">
+                        <div class="dropdown pull-right">
+                            <button type="button" class="btn btn-link" data-toggle="dropdown">
+                                <span class="fa fa-bell-o" aria-hidden="true"></span>
+                                <div class="badge badge-danger badge-pill">3</div>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                        <div class="dropdown pull-right">
+                            <button type="button" class="btn btn-link thumbnail" data-toggle="dropdown">
+                                <img src="imgs/doge.jpg">
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#">Link 3</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 1</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <ng-view class="content content-position">
+        </ng-view>
+    </div>
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar"></aside>
+
+    </aside>
+
+    <script src="plugins/angularjs/angular.js"></script>
+    <script src="plugins/angularjs/angular-route.js"></script>
+    <script src="js/filters/customFilters.js"></script>
+    <script src="js/configs/customConfigs.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

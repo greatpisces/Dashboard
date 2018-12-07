@@ -1,0 +1,100 @@
+body {
+    background-color: #e5e9ec;
+}
+
+.navbar .row {
+    width: 100%;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+nav .dropdown .btn {
+    color: #5a6268;
+}
+
+nav .dropdown .btn .badge {
+    top: -1em;
+    left: -1em;
+}
+
+nav .dropdown .thumbnail {
+    padding: 0;
+}
+
+nav .dropdown .thumbnail img {
+    border-radius: 50%;
+    max-height: 2.3em;
+}
+
+.fa {
+    text-decoration: none;
+}
+
+.main-sidebar {
+    width: 260px;
+    height: 100%;
+    background-color: #005cbf;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    z-index: 1040;
+}
+
+.main-container {
+    overflow-y: hidden;
+    position: absolute;
+    left: 260px;
+    right: 0;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+/**
+siderbar
+ */
+aside {
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+
+.sidebar-open .main-sidebar {
+    left: -260px;
+}
+
+.sidebar-open .main-container {
+    left: 0;
+}
+
+.fixed-top {
+    position: absolute;
+    transition: all 0.3s ease 0s;
+}
+
+/*
+content
+ */
+
+.content {
+    padding: 1em;
+}
+
+.content-position {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 400px) {
+    .fixed-top {
+        position: fixed;
+    }
+    .content-position {
+        position: fixed;
+    }
+}
