@@ -71,7 +71,4 @@ pokemon.controller("pokemonList", function ($scope, $http, $filter, parameter) {
         }
     );
 
-    /*
-    测试
-     */
 });
