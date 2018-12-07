@@ -70,4 +70,8 @@ pokemon.controller("pokemonList", function ($scope, $http, $filter, parameter) {
             $scope.error = 'Could not load notes';
         }
     );
+
+    /*
+    测试
+     */
 });
